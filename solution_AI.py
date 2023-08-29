@@ -127,7 +127,5 @@ if __name__ == '__main__':
     waiter_bot.chat_interface()
     
 
-#if __name__ == '__main__':
-#    chat_gpt = ChatGPT() 
-#    chat_gpt.chat_interface()
+
 
