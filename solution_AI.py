@@ -64,68 +64,14 @@ class Waiter(ChatGPT):
         self.presence_penalty = 0.2
         self.frequency_penalty = 0.0
 
-#class DigitalWaiterChatbot:
-#    def __init__(self, root):
-#        self.root = root
-#        self.root.title("Digital Waiter Chatbot")
-
-#        self.chat_text = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=10)
-#        self.chat_text.pack(padx=10, pady=10)
-
-#        self.input_entry = tk.Entry(root, width=30)
-#        self.input_entry.pack(padx=10, pady=10)
-
-#        self.send_button = tk.Button(root, text="Send", command=self.send_message)
-#        self.send_button.pack(padx=10, pady=10)
-
-#        self.menu = {
-#            "burger": 10,
-#            "pizza": 12,
-#            "pasta": 8,
-#            "salad": 6
-#        }
-
-#        self.chat_text.insert(tk.END, "Digital Waiter: Welcome! How can I assist you?\n")
-#        self.chat_text.config(state=tk.DISABLED)
-
-#    def send_message(self):
-#        user_input = self.input_entry.get().lower()
-#        self.chat_text.config(state=tk.NORMAL)
-#        self.chat_text.insert(tk.END, "You: " + user_input + "\n")
-
-#        response = self.get_waiter_response(user_input)
-#        self.chat_text.insert(tk.END, "Digital Waiter: " + response + "\n")
-#        self.chat_text.config(state=tk.DISABLED)
-
-#        self.input_entry.delete(0, tk.END)
-
-#    def get_waiter_response(self, user_input):
-#        if "menu" in user_input:
-#            menu_items = ", ".join(self.menu.keys())
-#            return f"Our menu includes: {menu_items}"
-#        elif "order" in user_input:
-#           return "What would you like to order?"
-#        elif "bill" in user_input or "payment" in user_input:
-#            return "Your bill is $XX. How would you like to pay?"
-#        elif "thank you" in user_input:
-#            return "You're welcome! Enjoy your meal!"
-#        else:
-#            return "I'm here to assist you with the menu, orders, and payments."
-
-#def main():
-#    root = tk.Tk()
-#    app = DigitalWaiterChatbot(root)
-#    root.mainloop()
-
-#if __name__ == "__main__":
-#    main()
-
 if __name__ == '__main__':
     #api_key = APIKEY
 
     waiter_bot = Waiter()
     waiter_bot.chat_interface()
     
+
+
 
 
 
